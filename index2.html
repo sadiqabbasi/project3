@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Home Mobile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box1{
+            max-width: 100%;
+            width: 100%;
+            height: 570px;
+            background-color: white;
+            border: none;
+            text-align: center;
+        }
+        button{
+            width: 80%;
+            height: 55px;
+            border: 1px solid rgb(201, 108, 108);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 17px;
+            box-shadow: 5px 5px 4px gray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .parent{
+            filter: blur(6px);
+        }
+        
+        .box4{
+            max-width: 100%;
+            border: 1px solid crimson;
+            border-radius: 12px;
+            width: 100%;
+            height: 180px;
+            text-align: center;
+            padding: 15% 25% ;
+            background-color: whitesmoke;
+            line-height: 23px;
+            box-shadow: 6px 6px 5px gray;
+        }
+        .child{
+            position: absolute;
+            top: 35%;
+            left: 33%;
+            right: 50%;
+            bottom: 35%;
+            color: red;
+        }
+        @media screen and (max-width: 740px) {
+         .box4{
+             position: absolute;
+            right: -11%;
+            width: 100%;
+            height: 100%;    
+         } 
+         .child {
+         width: 50%;
+         position: absolute; /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
+    </style>
+</head>
+<body style=" font-size: 25px; background-color: rgb(187, 199, 199);  font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <div class="parent">
+        <div class="box1">
+            <p style=" display: inline-block; font-size: 170%; "><b>  Tasks</b> Lists  &nbsp; 
+                <a href="index2.html"><span style="color: red; " class="material-icons">
+                add_circle
+            </span></a></p> 
+            <button>
+                <a style="text-decoration: none; color: rgb(204, 9, 9);" href="paris.html">Trip to Paris</a>
+            </button>
+            <button>My Todo List 2</button>
+            <button>My Todo List 3</button>
+            <button>My Todo List 4</button>
+            <button>My Todo List 5</button>
+            
+        </div>
+    </div>
+    <div class="child">
+        <div class="box4">
+            <br>
+            <label for="test" > Add New List:</label><br> <br>
+            <input type="text" name="list" id="test" value="" size="18%" ><br> <br>
+            <button style="border-radius: 20px; background-color: rgb(231, 33, 33); "><a href="" style="text-decoration: none; color: white;">ADD</a></button>
+        </div>
+    </div>
+</body>
+</html>

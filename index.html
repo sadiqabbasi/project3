@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App UI Mobile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        div .box1{
+            padding-top: 4%;
+            border: 1px solid crimson;
+            border-radius: 10px;
+            width: 350px;
+            margin: 20px;
+            height: 300px;
+            box-shadow: 8px 7px #888888;
+        }
+        .box2{
+            padding-top: 4%;
+            border: 1px solid crimson;
+            border-radius: 10px;
+            width: 350px;
+            margin: 20px;
+            height: 300px;
+            box-shadow: 8px 7px #b89a9a;
+        }
+        .box3{
+            padding-top: 4%;
+            border: 1px solid crimson;
+            border-radius: 10px;
+            width: 350px;
+            margin: 20px;
+            height: 300px;
+            box-shadow: 8px 7px #888888;
+        }
+        .box4{
+            padding-top: 4%;
+            border: 1px solid crimson;
+            border-radius: 10px;
+            width: 350px;
+            margin: 20px;
+            height: 300px;
+            box-shadow: 8px 7px #888888;
+        }
+        .box5{
+            padding-top: 4%;
+            border: 1px solid crimson;
+            border-radius: 10px;
+            width: 350px;
+            margin: 20px;
+            height: 300px;
+            box-shadow: 8px 7px #888888;
+        }
+        
+        @media only screen and (max-width: 600px){
+            div.a1{
+                display: none;
+            }
+            div.a2{
+                display: none;
+            }
+            .text{
+               display: flex;
+               flex-flow: column;
+               height: 20px;
+               width: 90%;
+               line-height: 0ch;
+           }
+           span.a2{
+               display: none;
+           }
+           }
+    </style>
+</head>
+<body style="text-align: center; font-size: 20px; background-color: white;  font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <div class="box0">
+        <div>
+            <p style=" display: inline-block; font-size: 170%; margin-top: 7%;"><b>  Tasks</b> Lists &nbsp; &nbsp;
+                <span class="a2">&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span> 
+                <a href="index2.html"><span style="color: red; " class="material-icons">
+                add_circle
+                </span></a> <span class="a2"> Add List</span> </p> 
+        </div> 
+
+        <div class="text" style="align-items: center;margin: 0% 5% 5% 5%; display: flex;">
+            <div class="box1">
+                <a  style="text-decoration: none;" href="paris.html" class="ind3">
+                    <p style="color: red;">Trip to Paris</p>
+                </a>
+                <div class="a1"><hr><br>
+                    <del style="color: red;">Completed task</del><br><br>
+                    <form action="" class="form">
+                        <input type="checkbox" id="check">
+                        <label for="check">Pending Task</label>
+                    </form></div>
+            </div>
+            <div class="box2"> 
+                <p style="color: red;">My Todo List 2</p> 
+                <div class="a2">
+                    <hr><br>
+                    <del style="color: red;">Completed task</del><br><br>
+                <input type="checkbox" id="check">
+            <label for="check">Pending Task</label>
+                </div>
+            </div>
+            <div class="box3">
+                <p style="color: red;">My Todo List 3</p>
+                <div class="a2">
+                    <hr><br>
+                    <del style="color: red;">Completed task</del><br><br>
+                <input type="checkbox" id="check">
+            <label for="check">Pending Task</label>
+                </div>
+            </div>
+            <div class=" box4">
+                <p style="color: red;">My Todo List 4</p> 
+                <div class="a2">
+                    <hr><br>
+                    <del style="color: red;">Completed task</del><br><br>
+                <input type="checkbox" id="check">
+            <label for="check">Pending Task</label>
+                </div>
+            </div>
+            <div class="box5">
+                <p style="color: red;">My Todo List 5</p>
+                <div class="a2">
+                    <hr><br>
+                    <del style="color: red;">Completed task</del><br><br>
+                <input type="checkbox" id="check">
+            <label for="check">Pending Task</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
